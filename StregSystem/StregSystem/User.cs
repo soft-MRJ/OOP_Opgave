@@ -7,13 +7,14 @@ using System.Text.RegularExpressions;
 
 namespace StregSystem
 {
-    public class User : IComparable
+    public class User : IComparable<User>
     {
 
-        delegate string UserBalanceNotification(User user, decimal balance);
+        public delegate void UserBalanceNotification(User user, decimal balance);
 
         // Private variables - used for encapsulation
         private int id;
+        private static int idIcrement = 0;
         private string firstname;
         private string lastname;
         private string username;
@@ -25,6 +26,19 @@ namespace StregSystem
          *   private id for the specific user
          *   set the prefix incremented static id to the specific user's id
          */
+        public User(string firstname,
+                    string lastname,
+                    string username,
+                    string email,
+                    decimal balance)
+        {
+            Id = ++idIcrement;
+            Firstname = firstname;
+            Lastname = lastname;
+            Username = username;
+            Email = email;
+            Balance = balance;
+        }
 
         public int Id
         {
@@ -88,21 +102,27 @@ namespace StregSystem
         {
             get { return balance; }
             set
-            {
+            { 
+                UserBalanceNotification UserNotify = Nofity;
                 if (balance < 50)
-                    UserBalanceNotification(Nofity);
+                    UserNotify(this, Balance);
                 balance += value;
             }
         }
 
-        public string Nofity(User user, decimal balance)
+        public void Nofity(User user, decimal balance)
         {
-            return $"{user.ToString()}, you are below 50kr. Consider adding more money!\nCurrent balance {balance}";
+            Console.WriteLine($"{user.ToString()}, you are below 50kr. Consider adding more money!\nCurrent balance {balance}");
         }
 
-        public int CompareTo(object? obj)
+        public int CompareTo(User user)
         {
-            throw new NotImplementedException();
+            if (user.Id < Id)
+                return 1;
+            else if (user.Id > Id)
+                return -1;
+            else
+                return 0;
         }
 
         public override string ToString()
