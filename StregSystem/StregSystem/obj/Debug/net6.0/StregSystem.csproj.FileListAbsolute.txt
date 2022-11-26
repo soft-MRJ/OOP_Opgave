@@ -1,0 +1,15 @@
+D:\Programming\C#\StregSystem\StregSystem\bin\Debug\net6.0\StregSystem.exe
+D:\Programming\C#\StregSystem\StregSystem\bin\Debug\net6.0\StregSystem.deps.json
+D:\Programming\C#\StregSystem\StregSystem\bin\Debug\net6.0\StregSystem.runtimeconfig.json
+D:\Programming\C#\StregSystem\StregSystem\bin\Debug\net6.0\StregSystem.dll
+D:\Programming\C#\StregSystem\StregSystem\bin\Debug\net6.0\StregSystem.pdb
+D:\Programming\C#\StregSystem\StregSystem\obj\Debug\net6.0\StregSystem.csproj.AssemblyReference.cache
+D:\Programming\C#\StregSystem\StregSystem\obj\Debug\net6.0\StregSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\C#\StregSystem\StregSystem\obj\Debug\net6.0\StregSystem.AssemblyInfoInputs.cache
+D:\Programming\C#\StregSystem\StregSystem\obj\Debug\net6.0\StregSystem.AssemblyInfo.cs
+D:\Programming\C#\StregSystem\StregSystem\obj\Debug\net6.0\StregSystem.csproj.CoreCompileInputs.cache
+D:\Programming\C#\StregSystem\StregSystem\obj\Debug\net6.0\StregSystem.dll
+D:\Programming\C#\StregSystem\StregSystem\obj\Debug\net6.0\refint\StregSystem.dll
+D:\Programming\C#\StregSystem\StregSystem\obj\Debug\net6.0\StregSystem.pdb
+D:\Programming\C#\StregSystem\StregSystem\obj\Debug\net6.0\StregSystem.genruntimeconfig.cache
+D:\Programming\C#\StregSystem\StregSystem\obj\Debug\net6.0\ref\StregSystem.dll
